@@ -1,0 +1,113 @@
+{
+  "projectType": "saas",
+  "projectName": "Pawboard",
+  "projectDescription": "Real-time collaborative ideation board with AI assistance and cat-themed design",
+  "theme": "palm",
+  "primaryColor": "#f59e0b",
+  "lightColor": "#fef08a",
+  "darkColor": "#f97316",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/cards",
+              "features/realtime-collaboration",
+              "features/ai-assistant",
+              "features/comments-threads",
+              "features/blur-mode"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/creating-sessions",
+              "guides/organizing-ideas",
+              "guides/using-ai",
+              "guides/keyboard-shortcuts"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "development/local-setup",
+              "development/architecture",
+              "development/database-schema",
+              "development/contributing"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Server Actions",
+            "pages": [
+              "api/cards",
+              "api/sessions",
+              "api/threads-comments"
+            ]
+          },
+          {
+            "group": "AI Tools",
+            "pages": [
+              "api/ai/overview",
+              "api/ai/create-card",
+              "api/ai/edit-card",
+              "api/ai/cluster-cards",
+              "api/ai/find-similar",
+              "api/ai/summarize"
+            ]
+          },
+          {
+            "group": "Realtime Events",
+            "pages": [
+              "api/realtime/events",
+              "api/realtime/presence"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time collaborative canvas with drag-and-drop cards",
+    "AI assistant with natural language commands for card management",
+    "Live cursors and presence awareness",
+    "Comment threads attached to cards or canvas positions",
+    "Blur mode for private brainstorming with selective reveal",
+    "AI-powered card clustering and similarity search using embeddings",
+    "Voice input for creating cards",
+    "Voting and reactions on ideas",
+    "Anonymous and authenticated collaboration modes"
+  ],
+  "publicApiSurface": [
+    "createCard",
+    "updateCard",
+    "deleteCard",
+    "moveCard",
+    "resizeCard",
+    "voteCard",
+    "toggleReaction",
+    "createSession",
+    "updateSessionSettings",
+    "createThread",
+    "addComment",
+    "AI Tools: create-card, edit-card, delete-cards, move-cards, cluster-cards, find-similar, summarize-cards, change-color",
+    "Realtime Events: card:add, card:update, card:move, card:delete, card:typing, thread:add, comment:add, user:join, session:settings",
+    "useRealtimeCards hook",
+    "useRealtimePresence hook",
+    "useRealtimeCursors hook"
+  ]
+}
